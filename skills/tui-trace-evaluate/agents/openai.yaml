@@ -1,0 +1,14 @@
+interface:
+  display_name: Проверка системы контроля
+  short_description: Проверить обнаружение и реальные блокировки
+  default_prompt: Используй $tui-trace-evaluate для контроля TUI-агентов по указанным
+    локальным трейсам.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

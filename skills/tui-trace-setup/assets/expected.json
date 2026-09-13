@@ -1,0 +1,18 @@
+{
+  "as_of": "2026-09-13T12:00:05Z",
+  "safe.jsonl": {
+    "exit_code": 0,
+    "verdict": "no_findings"
+  },
+  "blocked-attempt.jsonl": {
+    "exit_code": 20,
+    "verdict": "pause_required",
+    "required_rule": "protected_path_target",
+    "effect": "attempt was denied; no successful change proven"
+  },
+  "sequence-gap.jsonl": {
+    "exit_code": 30,
+    "verdict": "indeterminate",
+    "required_rule": "sequence_gap_or_reorder"
+  }
+}

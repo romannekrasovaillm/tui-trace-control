@@ -1,0 +1,14 @@
+interface:
+  display_name: Сбор и нормализация трейсов
+  short_description: Собрать локальные трейсы с проверкой полноты
+  default_prompt: Используй $tui-trace-ingest для контроля TUI-агентов по указанным
+    локальным трейсам.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

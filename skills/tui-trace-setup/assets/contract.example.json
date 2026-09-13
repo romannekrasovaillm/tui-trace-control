@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "contract_id": "demo-contract-v1",
+  "run_id": "demo-run",
+  "mode": "observe",
+  "scope": {
+    "read_roots": [
+      "/srv/demo/work"
+    ],
+    "write_roots": [
+      "/srv/demo/work"
+    ],
+    "protected_roots": [
+      "/srv/demo/work/control",
+      "/srv/demo/work/secrets"
+    ],
+    "allowed_hosts": [
+      "docs.example.org"
+    ],
+    "allowed_tools": [
+      "read",
+      "write",
+      "shell",
+      "network"
+    ],
+    "allowed_operations": [
+      "read",
+      "write",
+      "delete",
+      "network",
+      "shell"
+    ],
+    "denied_operations": [
+      "credentials_read",
+      "privilege_change",
+      "monitor_change",
+      "trace_delete"
+    ],
+    "max_tool_calls": 100,
+    "max_consecutive_failures": 3
+  },
+  "monitor": {
+    "expected_agents": [
+      "worker-a"
+    ],
+    "poll_seconds": 5,
+    "heartbeat_seconds": 15,
+    "heartbeat_timeout_seconds": 60,
+    "clock_skew_seconds": 5,
+    "max_line_bytes": 1048576,
+    "max_file_bytes": 16777216,
+    "max_events": 100000
+  },
+  "authority": {
+    "decision_owner": "operator",
+    "pause_new_actions": false,
+    "terminate_run": false,
+    "resume_run": false
+  },
+  "acceptance": [
+    "Проверить фактический результат задачи и отсутствие незакрытых нарушений"
+  ],
+  "example_only": true
+}

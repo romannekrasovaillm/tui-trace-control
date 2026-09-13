@@ -1,0 +1,14 @@
+interface:
+  display_name: Мониторинг трейсов
+  short_description: Проверять события и обнаруживать потерю контроля
+  default_prompt: Используй $tui-trace-watch для контроля TUI-агентов по указанным
+    локальным трейсам.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

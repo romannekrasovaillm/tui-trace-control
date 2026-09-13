@@ -1,0 +1,14 @@
+interface:
+  display_name: Возобновление под контролем
+  short_description: Проверить условия безопасного продолжения
+  default_prompt: Используй $tui-trace-resume для контроля TUI-агентов по указанным
+    локальным трейсам.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
